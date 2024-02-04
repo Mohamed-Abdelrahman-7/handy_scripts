@@ -1,3 +1,5 @@
+"""this script uses the vt-py library to interact with virustotal before using this script make sure you installed the library in your environemnt by simply run the command 
+python -m pip install vt-py"""
 import vt,json
 def hash_intel_vt(client,hash):
     """take a vt.Client object and a filehash "string" and returns the last_analysis_stats for that hash"""
