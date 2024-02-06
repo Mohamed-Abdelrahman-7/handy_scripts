@@ -22,7 +22,7 @@ VT_api_key="your vt api key"
 
 vtClient=vt.Client(VT_api_key)
 
-hashes=[x.strip() for x in (input("Enter file hash or multiple file hashes with comma separated: ")).split(',')]
+hashes=list(set([x.strip() for x in (input("Enter file hash or multiple file hashes with comma separated: ")).split(',')]))
 
 print('\n')
 for filehash in hashes:
