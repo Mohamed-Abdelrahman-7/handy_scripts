@@ -17,6 +17,9 @@ def hash_intel_vt(client,hash):
         filehashReport="an error {} occured while trying to query VT for the filehash !!".format(e)
     return filehashReport 
 
+# import nest_asyncio
+# nest_asyncio.apply()
+#uncommment the previous 2 lines if you are running this code from jupyter notebook and having issue an error This event loop is already running
 # replace your vt api key with your key and leave the quotes you will find your virus total api key by clicking on your profile and going to API key
 VT_api_key="your vt api key"
 
@@ -28,3 +31,4 @@ print('\n')
 for filehash in hashes:
     print(filehash+":\n"+hash_intel_vt(vtClient,filehash)+'\n')
     
+
